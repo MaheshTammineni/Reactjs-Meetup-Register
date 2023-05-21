@@ -81,7 +81,7 @@ const Register = props => (
                 src="https://assets.ccbp.in/frontend/react-js/meetup/website-register-img.png"
                 alt="website register"
               />
-              <Form onClick={submitForm}>
+              <Form>
                 <FormHead>Let us Join</FormHead>
                 <Label htmlFor="name">NAME</Label>
                 <Input
@@ -99,7 +99,7 @@ const Register = props => (
                     </Options>
                   ))}
                 </Select>
-                <FormBtn type="submit">Register Now</FormBtn>
+                <FormBtn onClick={submitForm}>Register Now</FormBtn>
                 {registerError ? (
                   <FormErr>please enter your name?</FormErr>
                 ) : null}
